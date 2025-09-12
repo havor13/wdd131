@@ -7,6 +7,7 @@
   --maxw: 72rem; /* controls main width */
   --radius: 12px;
   --shadow: 0 6px 20px rgba(0,0,0,.25);
+  --card-dark: #2c2c2c;
 }
 
 *,
@@ -138,7 +139,7 @@ img {
 figcaption {
   padding: .75rem 1rem;
   font-size: 0.95rem;
-  color: color-mix(in srgb, var(--text) 85%, white 15%);
+  color: var(--text-light); /* or a solid fallback like #666 */
 }
 
 /* Footer */
@@ -147,7 +148,7 @@ figcaption {
   margin-top: 2rem;
   padding: 1rem;
   text-align: center;
-  color: color-mix(in srgb, var(--text) 80%, white 20%);
+  color: var(--footer-text); /* or a solid fallback like #555 */
 }
 
 /* Respect reduced motion */

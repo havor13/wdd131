@@ -84,7 +84,7 @@ html, body {
   display: block;
   text-decoration: none;
   color: var(--text);
-  background: color-mix(in srgb, var(--card) 85%, black 15%);
+  background-color: var(--card-dark); /* or a solid color like #333 */
   padding: .6rem .8rem;
   border-radius: 8px;
   transition: transform .15s ease, background-color .2s ease, color .2s ease;

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temple Album</title>
+
+  <!-- Google Fonts: example pair -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+
+  <!-- Mobile-first CSS, then large overrides -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="site-title">Temple Album</span>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        ☰
+      </button>
+    </div>
+
+    <nav id="primary-nav" class="nav">
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temple Album</h1>
+
+    <section class="gallery" aria-label="Temple photo gallery">
+      <figure>
+        <img src="images/accra-ghana-temple.webp" width="640" height="426" alt="Temple exterior at sunset" loading="lazy">
+        <figcaption>Accra Ghana Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/salt-lake-temple.webp" width="640" height="426" alt="Temple exterior with gardens" loading="lazy">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/rome-italy-temple.webp" width="640" height="426" alt="Temple architectural details" loading="lazy">
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/provo-city-center-temple.webp" width="640" height="426" alt="Temple reflecting in water" loading="lazy">
+        <figcaption>Provo City Center Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/paris-france-temple.webp" width="640" alt="Temple with dramatic sky" loading="lazy">
+        <figcaption>Paris France Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/pão-paulo-brazil-temple.webp" width="640" alt="Temple entrance and spires" loading="lazy">
+        <figcaption>São Paulo Brazil Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/aba-nigeria-temple.webp" width="640" alt="Temple garden pathway" loading="lazy">
+        <figcaption>Aba Nigeria Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/laie-hawaii-temple.webp" width="640" alt="Temple night illumination" loading="lazy" >
+        <figcaption>Laie Hawaii Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/kinshasa-congo-temple.webp" width="640" alt="Temple with palm trees" loading="lazy" >
+        <figcaption>Kinshasa DR Congo Temple</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      <span id="year"></span> • Sampson Havor • Kumasi, Ghana
+    </p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>

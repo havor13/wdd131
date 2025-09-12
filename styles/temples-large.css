@@ -1,0 +1,42 @@
+/* Larger view: show multi-column grid, show nav as row, hide hamburger */
+
+@media (min-width: 700px) {
+  /* Header adjustments */
+  .brand {
+    padding: 1rem;
+  }
+
+  .menu-toggle {
+    display: none; /* hamburger hidden on large */
+  }
+
+  .nav {
+    padding: 0 1rem 1rem;
+  }
+
+  .nav-list {
+    display: flex !important;       /* always visible on large */
+    flex-direction: row;             /* Flexbox nav (required) */
+    gap: .75rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .nav a {
+    padding: .5rem .9rem;
+  }
+
+  /* Main centered and limited width (required) */
+  main {
+    margin: 2rem auto 3rem;
+  }
+
+  /* Gallery grid: choose your approach
+     Option A: explicit columns
+     grid-template-columns: 1fr 1fr 1fr;
+     Option B: auto-fit + minmax for fluid columns (recommended)
+  */
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+  }
+}

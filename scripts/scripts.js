@@ -1,8 +1,10 @@
+// Footer logic
 document.querySelector("#year").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent = document.lastModified;
 
-const temp = 45;
-const speed = 5;
+// Wind chill logic
+const temp = parseFloat(document.querySelector("#temp").textContent);
+const speed = parseFloat(document.querySelector("#speed").textContent);
 
 function calculateWindChill(t, s) {
   return Math.round(35.74 + 0.6215 * t - 35.75 * s**0.16 + 0.4275 * t * s**0.16);

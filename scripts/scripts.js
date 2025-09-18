@@ -12,8 +12,5 @@ function calculateWindChill(t, s) {
 
 const windChillElement = document.querySelector("#windChill");
 
-if (temp <= 50 && speed > 3) {
-  windChillElement.textContent = calculateWindChill(temp, speed) + "°F";
-} else {
-  windChillElement.textContent = "N/A";
-}
+windChillElement.textContent =
+  (temp <= 50 && speed > 3) ? `${calculateWindChill(temp, speed)}°F` : "N/A";

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Ghana</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Ghana</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/ghana-small.webp" media="(max-width: 500px)">
+        <source srcset="images/ghana-medium.webp" media="(max-width: 1000px)">
+        <img src="images/ghana-large.webp" alt="Scenic view of Ghana">
+      </picture>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <img src="images/weather-icon.svg" alt="Weather icon" class="mobile-icon">
+      <p>Temperature: <span id="temp">45</span>°F</p>
+      <p>Wind Speed: <span id="speed">5</span> mph</p>
+      <p>Wind Chill: <span id="windChill">Calculating...</span></p>
+    </section>
+
+    <section class="culture">
+  <h2>Culture & Traditions</h2>
+  <p>Ghana is known for its vibrant festivals, traditional drumming, and colorful kente cloth. The Ashanti and Ewe cultures are especially rich in heritage, with storytelling, dance, and music playing central roles.</p>
+</section>
+
+<section class="food">
+  <h2>Local Cuisine</h2>
+  <ul>
+    <li><strong>Jollof Rice</strong> – A spicy tomato-based rice dish loved across West Africa.</li>
+    <li><strong>Fufu & Light Soup</strong> – A starchy dough paired with flavorful broth.</li>
+    <li><strong>Banku & Tilapia</strong> – Fermented corn dough served with grilled fish.</li>
+    <li><strong>Kelewele</strong> – Spicy fried plantains, often sold by street vendors.</li>
+  </ul>
+</section>
+
+<section class="landmarks">
+  <h2>Places to Explore</h2>
+  <p>From the historic Cape Coast Castle to the lush Mole National Park, Ghana offers a diverse range of attractions. Don’t miss the Kakum Canopy Walkway or the bustling Makola Market in Accra.</p>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span></p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

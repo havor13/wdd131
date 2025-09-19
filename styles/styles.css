@@ -32,9 +32,12 @@ body {
   }
 
   .mobile-icon {
-    display: none;
-  }
+  width: 40px;
+  height: auto;
+ }
+
 }
+
 
 section {
   padding: 2rem;

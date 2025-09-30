@@ -1,0 +1,53 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+label, legend {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+input[type="submit"] {
+  background-color: #3F51B5;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #303F9F;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}

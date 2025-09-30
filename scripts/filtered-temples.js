@@ -1,3 +1,4 @@
+// Temple Data Array
 const temples = [
   {
     templeName: "Accra Ghana Temple",
@@ -39,7 +40,7 @@ const temples = [
     location: "São Paulo, Brazil",
     dedicated: "1978-10-30",
     area: 59300,
-    imageUrl: "images/são-paulo-brazil-temple.webp" 
+    imageUrl: "images/são-paulo-brazil-temple.webp"
   },
   {
     templeName: "Aba Nigeria Temple",
@@ -71,28 +72,35 @@ const temples = [
   }
 ];
 
+// DOM Reference
 const templeCards = document.querySelector(".gallery");
 
+// Render Temple Cards
 function displayTemples(templesArray) {
   templeCards.innerHTML = "";
 
   templesArray.forEach(temple => {
-    const figure = document.createElement("figure");
+    const card = document.createElement("section");
+    card.classList.add("temple-card");
 
-    figure.innerHTML = `
+    card.innerHTML = `
+      <h2>${temple.templeName}</h2>
       <img 
         src="${temple.imageUrl}" 
-        alt="${temple.templeName}" 
+        alt="Image of ${temple.templeName}" 
         loading="lazy" 
         onerror="this.src='https://via.placeholder.com/300x200?text=Image+Unavailable'"
       >
-      <figcaption>${temple.templeName}</figcaption>
+      <p><strong>Location:</strong> ${temple.location}</p>
+      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+      <p><strong>Size:</strong> ${temple.area.toLocaleString()} sq ft</p>
     `;
 
-    templeCards.appendChild(figure);
+    templeCards.appendChild(card);
   });
 }
 
+// Filter Logic
 function filterTemples(criteria) {
   let filtered = [];
 
@@ -116,6 +124,7 @@ function filterTemples(criteria) {
   displayTemples(filtered);
 }
 
+// Initialize Page
 document.addEventListener("DOMContentLoaded", () => {
   displayTemples(temples);
 
@@ -127,6 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Footer Updates
   document.getElementById("year").textContent = new Date().getFullYear();
   document.getElementById("last-modified").textContent = document.lastModified;
 });

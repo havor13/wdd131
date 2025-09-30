@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Review Form</title>
+  <meta name="description" content="Submit your product review including ratings, preferences, and feedback.">
+  <meta name="author" content="Sampson Havor">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/form.css">
 </head>
 <script>
@@ -29,6 +32,7 @@
         <label><input type="radio" name="rating" id="rate3" value="3" /> ☆☆☆</label>
         <label><input type="radio" name="rating" id="rate4" value="4" /> ☆☆☆☆</label>
         <label><input type="radio" name="rating" id="rate5" value="5" /> ☆☆☆☆☆</label>
+        <label><input type="checkbox" name="features" value="durability"> Durability</label>
       </fieldset>
 
       <!-- Date of Installation -->
@@ -49,10 +53,10 @@
 
       <!-- User Name -->
       <label for="username">Your Name:</label>
-      <input type="text" id="username" name="username" />
+      <input type="text" id="username" name="username">
 
       <!-- Submit -->
-      <input type="submit" value="Submit Review" />
+      <input type="submit" value="Submit Review">
     </form>
   </main>
    <footer>
@@ -60,6 +64,6 @@
     <p>Country: Ghana</p>
     <p>Last Modified: <span id="lastModified"></span></p>
    </footer>
-  <script src="scripts/form.js"></script>
+  <script src="scripts/form.js" defer></script>
 </body>
 </html>

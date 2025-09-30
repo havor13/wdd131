@@ -1,3 +1,5 @@
+
+/* Base Styles */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -6,6 +8,7 @@ body {
   color: #333;
 }
 
+/* Main Container */
 main {
   max-width: 600px;
   margin: auto;
@@ -14,24 +17,31 @@ main {
   border-radius: 8px;
 }
 
-label, legend {
+/* Typography and Labels */
+label,
+legend {
   display: block;
   margin-top: 1rem;
   font-weight: bold;
 }
 
-input, select, textarea {
+/* Form Inputs */
+input,
+select,
+textarea {
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.5rem;
   box-sizing: border-box;
 }
 
+/* Fieldset Reset */
 fieldset {
   border: none;
   padding: 0;
 }
 
+/* Submit Button */
 input[type="submit"] {
   background-color: #3F51B5;
   color: white;
@@ -40,12 +50,19 @@ input[type="submit"] {
   margin-top: 1rem;
   cursor: pointer;
   border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
+/* Hover and Focus States */
 input[type="submit"]:hover {
   background-color: #303F9F;
 }
 
+input[type="submit"]:focus {
+  outline: 2px solid #FFC107;
+}
+
+/* Footer Styling */
 footer {
   text-align: center;
   margin-top: 2rem;

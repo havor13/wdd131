@@ -147,9 +147,9 @@ footer {
 }
 
 footer a {
-  color: var(--accent-color);
-  text-decoration: none;
+  color: #fff; /* or use a darker gold like #C49000 */
 }
+
 
 /* === Responsive Design === */
 @media (max-width: 768px) {

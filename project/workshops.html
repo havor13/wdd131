@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Sampson Havor">
+  <title>Workshops | Kumasi Tech Mentors</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-nav-container">
+      <a href="index.html"><img src="images/logo.webp" alt="Kumasi Tech Mentors Logo" class="logo" /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mentors.html">Mentors</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1>Upcoming Workshops</h1>
+      <p>Explore hands-on learning experiences led by local mentors in Kumasi. Register below to reserve your spot.</p>
+      <div id="workshop-list"></div>
+    </section>
+
+    <section>
+      <h2>Register for a Workshop</h2>
+      <form id="workshop-form">
+        <label for="participant-name">Name:</label>
+        <input type="text" id="participant-name" name="participant-name" required>
+
+        <label for="participant-email">Email:</label>
+        <input type="email" id="participant-email" name="participant-email" required>
+
+        <label for="workshop-topic">Workshop Topic:</label>
+        <select id="workshop-topic" name="workshop-topic" required>
+          <option value="">Select a topic</option>
+          <option value="HTML & CSS Basics">HTML & CSS Basics</option>
+          <option value="JavaScript Essentials">JavaScript Essentials</option>
+          <option value="Instructional Design">Instructional Design</option>
+        </select>
+
+        <!-- Image preview container -->
+        <div id="topic-preview" class="preview-container">
+          <img id="preview-image" src="" alt="" style="display: none;" />
+        </div>
+
+        <button type="submit">Register</button>
+        
+      </form>
+      <p id="registration-confirmation"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kumasi Tech Mentors</p>
+    <a href="references.html">References</a>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="images/facebook.webp" alt="Facebook icon">
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="images/twitter.webp" alt="Twitter icon">
+      </a>
+      <a href="https://instagram.co" target="_blank" aria-label="Instagram">
+        <img src="images/instagram.webp" alt="Instagram icon">
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
